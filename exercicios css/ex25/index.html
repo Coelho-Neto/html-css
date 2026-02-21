@@ -10,30 +10,31 @@
         }
 
         table{
+            height: 400px;
             width: 400px;
             border-collapse:collapse ;
-            border: 4px solid red;
+       
         }
 
         td{
             border: 1px solid black;
             padding: 9px;
-           
+            text-align: center; 
+            /*Alinhamento Vertical*/
+
+            vertical-align: middle; 
+            /*Alinhamento Horizontal*/
         }
 
-          tr.linha{
-           background-color: gray ; 
+        .numero{
+         text-align: right;
         }
 
-        td.dado{
-            background-color: aqua;
-        }
 
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
-    <table>
       <!--
         Hierarquia de tabelas (simples)
         Table = tabela
@@ -41,7 +42,7 @@
         table header = cabeçalho de tabela
         table data = data de tabela
       -->  
-    </table>
+    
     <table>
         <tr>
             <!-- primeira linha--> 
@@ -50,16 +51,16 @@
              <td>C1</td>
         </tr>
 
-        <tr class="linha">
+        <tr>
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
 
         <tr>
             <td>A3</td>
             <td>B3</td>
-            <td class="dado">C3</td>
+            <td class="numero">C3</td>
         </tr>
 
         <td>A4</td>
