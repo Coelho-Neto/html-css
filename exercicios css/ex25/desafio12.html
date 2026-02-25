@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            position: relative;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead > tr > th{
+            background-color: rgb(92, 92, 92);
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        tbody > tr > th{
+            background-color: lightgray;
+            color: rgb(0, 0, 0);
+            font-weight: bold;  
+            font-size: 1.2em;
+        } 
+
+        #tm{
+            text-align: left;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        
+         td.boa:hover {
+         background-color: greenyellow;
+        }
+
+     td.ruim:hover {
+         background-color: rgb(250, 0, 0);
+        }
+
+        td.media:hover {
+         background-color: #31a2ff;
+        }
+    </style>
+</head>
+<body>
+    <table>
+         <thead>
+         <tr>
+                <th rowspan="2" scope="rowgroup" >Aréa</th>
+
+                <th rowspan="2" scope="rowgroup">Disciplinas</th>
+
+                <th colspan="2" scope="colgroup">Notas</th>
+
+                <th rowspan="2" scope="rowgroup">Média</th>
+         </tr>
+
+         <tr>    
+                <th>Nota1</th>
+                <th>Nota2</th></tr>
+         </thead>
+
+         <tbody>
+
+         <tr>
+            <th rowspan="4">Exatas</th>
+            <td>Matemática</td>
+            <td class="boa">7.00</td>
+            <td class="boa">8.00</td>
+            <td class="media">7.50</td>
+         </tr>
+
+         <tr>
+            <td>Física</td>
+            <td class="ruim">6.00</td>
+            <td class="boa">9.00</td>
+            <td class="media">7.50</td>
+
+         </tr>
+            <td>Química</td>
+            <td class="ruim">5.00</td>
+            <td class="boa">10.00</td>
+            <td class="media">7.50</td> 
+         </tr>
+
+         </tr>
+            <td>Biologia</td>
+            <td class="boa">10.00</td>
+            <td class="ruim">6.00</td>
+            <td class="media">8.00</td> 
+         </tr>
+         </tbody>
+
+         <thead>
+            <tr>
+                <th colspan="4"id="tm">Média de Exatas:</th>
+                <td class="media" >7,60</td>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="boa">7,00</td>
+                <td class="boa">8,00</td>
+                <td class="media">7,50</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td class="boa">8,00</td>
+                <td class="boa">9,00</td>
+                <td class="media">8,50</td>
+            </tr>
+         </tbody>
+
+         <thead>
+            <tr>
+                <th colspan="4"id="tm">Média de Humanas:</th>
+                <td class="media" >8,00</td>
+            </tr>
+         </thead>
+    </table>
+
+
+    
+</body>
+</html>
